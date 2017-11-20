@@ -29,6 +29,7 @@ myWeather:CurrentWeather;
 )}
 
 refresh(): void {
+  
   window.location.reload();
 }
 }
