@@ -1,0 +1,26 @@
+<div class="form-container">
+  <fieldset class="center">
+      <figure>
+          <img src={{imgSrc}} alt={{myWeather.weatherKind}} width="304" height="228">
+        </figure>
+  </fieldset>
+  <table class="table">
+    <tr>
+      <th>City</th>
+      <th>Current Temperature</th>
+      <th>Weather Desrciption</th>
+      <th>Max Temperature</th>
+      <th>Min Temperature</th>
+    </tr>
+    <tr>
+      <td>{{myWeather.cityName}}</td>
+      <td>{{myWeather.temp}}</td>
+      <td>{{myWeather.weatherKind}}</td>
+      <td>{{myWeather.tempMax}}</td>
+      <td>{{myWeather.tempMin}}</td>
+     
+    </tr>
+  </table>
+  <button class="button" (click)="refresh()">Reload</button>
+</div>
+
